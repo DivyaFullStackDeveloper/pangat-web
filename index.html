@@ -1,435 +1,1891 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pangat Restaurant</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="././assets/css/index.css">
+  </head>
+  <body>
+    <section class="restro-main-cnt" id="home">
+      <!-- Top Navigation -->
+      <nav class="top-nav">
+        <div class="restro-name">
+          <sup><span>पं</span><u>gat</u></sup>
+          <sub
+            ><span>R</span><u>estaurant</u>
+            <i
+              class="fas fa-utensils"
+              style="margin-left: 10px; color: #f4b010"
+            ></i>
+          </sub>
+        </div>
+        <div class="nav-btns">
+          <button><a href="tel:+919876543210">Book Table</a></button>
+          <button id="menuBtn">Menu</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divya Bondre - Portfolio</title>
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./src/Project/css/index.css">
-</head>
+        <!-- Mobile buttons -->
+        <div class="mobile-top-buttons" id="mobileTopButtons">
+          <button><a href="tel:+919876543210">Book Table</a></button>
+          <button id="mobileMenuBtn">Menu</button>
+        </div>
+      </nav>
 
-<body>
-    <!---------------- HEADER SECTION ------------>
-    <header class="header">
-        <h1 class="logo">Portfolio</h1>
-        <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+      <!-- Hero Text -->
+      <div class="home-text">
+        <p class="home-text-one">
+          Say less,<br />
+          <span class="home-text-two">serve taste</span>
+        </p>
+        <p class="tag-line">The Taste of Affection</p>
+        <button class="view-menu-btn">
+          <a href="#food-menu">View menu</a>
         </button>
-        <nav class="navbar" id="navbar" role="navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skill">Skills</a>
-             <a href="#services">Services</a> 
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+      </div>
 
-    <!------------- HOME SECTION --------------->
-    <section id="home" class="home-container">
-        <div class="home-info">
-            <h3>Hello, it's me</h3>
-            <h2>DIVYA BONDRE</h2>
-            <p>I'm a Full-Stack Developer</p>
-
-            <!-- Social media links -->
-            <div class="links">
-                <a href="mailto:bondredivya12@gmail.com" aria-label="Send email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://github.com/DivyaFullStackDeveloper/Div_Portfolio" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/divya-bondre-23a330321/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-        </div>
-        <div class="home-logo">
-            <img src="./src/assets/image/divya1.jpeg" alt="Divya Bondre - Full Stack Developer" class="profile-logo">
-        </div>
+      <!-- Bottom Navigation -->
+      <nav class="bottom-nav" id="bottomNav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#special">Special</a>
+        <a href="#food-menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </section>
 
-     
-    <!---------- ABOUT SECTION ------------>
-    <section class="about-container" id="about">
-        <div class="about-content">
-            <!-- Left side - Profile and stats -->
-            <div class="about-left">
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="about-images">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/036/808/695/non_2x/ai-generated-menu-with-a-variety-of-dishes-for-indian-restaurant-free-photo.jpg"
+          alt="Restaurant Interior"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+          alt="Delicious Food"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/p/AF1QipOpcfFMIERarzG34vf4aGC5p5AvRAAwIYT-t5N6=s1360-w1360-h1020-rw"
+          alt="Chef Cooking"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/p/AF1QipOFJAGtgQDxOnRuvLWZXeeNQ880qyoeq1qoqBJy=s1360-w1360-h1020-rw"
+          alt="Traditional Dishes"
+        />
+      </div>
 
-                 <h2 class="about-title">About <span>Me</span></h2>
-                <p class="subtitle">Full-Stack Developer</p>
-                
-                <p class="about-description">
-                    I'm <strong>Divya R Bondre</strong>, a passionate <strong>Full-Stack Developer</strong> with a 
-                    strong focus on creating exceptional digital experiences. I specialize in building 
-                    <strong>responsive web applications</strong> using modern technologies like 
-                    <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>, and 
-                    <strong>React.js</strong>.
-                </p>
+      <div class="about-text">
+        <h5 class="about-section-title">About Us</h5>
+        <h1>Welcome to <i class="fa fa-utensils"></i>Pangat Restaurant</h1>
+        <p>
+          Experience the authentic flavors of traditional Indian cuisine at
+          Pangat Restaurant. Our journey began with a passion for serving
+          wholesome, flavorful meals that bring families together and create
+          lasting memories.
+        </p>
+        <p>
+          Every dish is prepared with love, using time-honored recipes passed
+          down through generations. From our signature Maharashtrian specialties
+          to popular North Indian delicacies, we ensure each meal is a
+          celebration of taste and tradition.
+        </p>
 
-                <!-- Action buttons -->
-                <div class="about-actions">
-                    <a href="./src/Project/resume.html" class="cv-button" download>
-                        <i class="fas fa-download"></i>
-                        Download CV
-                    </a>
-                    <a href="#Contact" class="contact-button">
-                        <i class="fas fa-envelope"></i>
-                        Get In Touch
-                    </a>
-                </div>
-                  
+        <div class="info-row">
+          <div class="info-box">
+            <h1>15</h1>
+            <div class="info-box-text">
+              <h6>Experience</h6>
+              <p>Years of</p>
             </div>
-
-            <!-- Right side - Main content -->
-            <div class="about-right">
-                <div class="about-highlights">
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="highlight-title">Clean Code</div>
-                        <div class="highlight-desc">Writing maintainable, scalable, and well-documented code</div>
-                    </div>
-                    
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="highlight-title">Responsive Design</div>
-                        <div class="highlight-desc">Creating seamless experiences across all devices</div>
-                    </div>
-                    
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <div class="highlight-title">Problem Solving</div>
-                        <div class="highlight-desc">Turning complex challenges into innovative solutions</div>
-                    </div>
-                    
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="highlight-title">Team Player</div>
-                        <div class="highlight-desc">Collaborating effectively in agile development environments</div>
-                    </div>
-                </div>
+          </div>
+          <div class="info-box">
+            <h1>50</h1>
+            <div class="info-box-text">
+              <h6>Master Chefs</h6>
+              <p>Popular</p>
             </div>
+          </div>
         </div>
-
-        <!-- Skills section integrated -->
-        <section id="skill" class="skills-section">
-            <h1 class="skill-title">My <span>Skills</span></h1>
-            <div class="skill-grid">
-                <!-- HTML Skill -->
-                <div class="skill-card">
-                    <h3>HTML5</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 90%;">90%</div>
-                    </div>
-                </div>
-
-                <!-- CSS Skill -->
-                <div class="skill-card">
-                    <h3>CSS3</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 85%;">85%</div>
-                    </div>
-                </div>
-
-                <!-- JavaScript Skill -->
-                <div class="skill-card">
-                    <h3>JavaScript</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 85%;">85%</div>
-                    </div>
-                </div>
-
-                <!-- ReactJS Skill -->
-                <div class="skill-card">
-                    <h3>ReactJS</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 80%;">80%</div>
-                    </div>
-                </div>
-
-                <!-- SQL Skill -->
-                <div class="skill-card">
-                    <h3>SQL</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 75%;">75%</div>
-                    </div>
-                </div>
-
-                <!-- Node.js Skill -->
-                <div class="skill-card">
-                    <h3>Node.js</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 70%;">70%</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      </div>
     </section>
 
-    <!---------- SERVICES SECTION ---------------->
-    <section class="services" id="services">
-        <h1 class="services-title">My <span>Services</span></h1>
-        
-        <div class="services-container">
-            <!-- Web Development Service -->
-            <div class="service-card">
-                <img src="https://img.icons8.com/color/96/web-design.png" alt="Web Development Icon" loading="lazy">
-                <p>Web Development</p>
-                <div class="description">
-                    I build responsive, fast, and visually appealing websites using modern web technologies.
-                </div>
-            </div>
-
-            <!-- UI/UX Design Service -->
-            <div class="service-card">
-                <img src="https://img.icons8.com/?size=80&id=9x65MLqCekT5&format=png" alt="UI/UX Design Icon" loading="lazy">
-                <p>UI/UX Design</p>
-                <div class="description">
-                    I design user-friendly interfaces that are both functional and visually attractive.
-                </div>
-            </div>
-
-            <!-- App Development Service -->
-            <div class="service-card">
-                <img src="https://img.icons8.com/?size=80&id=2wRCMlI8odhH&format=png" alt="App Development Icon" loading="lazy">
-                <p>App Development</p>
-                <div class="description">
-                    I create mobile and web apps that are smooth, efficient, and user-focused.
-                </div>
-            </div>
-
-            <!-- Manual Testing Service -->
-            <div class="service-card">
-                <img src="https://img.icons8.com/color/96/test-tube.png" alt="Manual Testing Icon" loading="lazy">
-                <p>Manual Testing</p>
-                <div class="description">
-                    I test applications manually to find bugs and ensure a high-quality user experience.
-                </div>
-            </div>
-
-            <!-- Database Service -->
-            <div class="service-card">
-                <img src="https://img.icons8.com/color/96/database.png" alt="Database Icon" loading="lazy">
-                <p>Database</p>
-                <div class="description">
-                    I manage structured data using optimized queries and secure database design.
-                </div>
-            </div>
+    <!-- Special Menu Section -->
+    <section class="special-menu" id="special">
+      <h2 class="special-title">Pangat Special</h2>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="carousel-item">
+            <img src="https://cdn.dotpe.in/longtail/store-items/7916910/9P6QP42e.jpeg" alt="Kawa poli">
+          
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Shahi Paneer"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOioPdTuyDrqsEJdUDcuLJ2jfSCP31QGI-cPNLYBgqL__ebSuogwLnzId95TKb89POT1g&usqp=CAU"
+              alt="Jini Dosa. "
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Chicken Madras Curry"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/premium-photo/puran-poli-also-known-as-holige-is-indian-sweet-flatbread-consumed-mostly-holi-festival-served-plate-with-pure-ghee-colourful-wooden-background-selective-focus_466689-68565.jpg"
+              alt="Puran Poli"
+            />
+          </div>
         </div>
-    </section>
- 
-    <!--------------- PROJECTS SECTION ------------>
-    <section class="projects-container" id="projects">
-        <h1 class="project-title">My <span>Projects</span></h1>
-        <div class="project-grid">
-            <!-- HTML Projects -->
-            <a href="./src/Project/html/html-folder.html" class="project-card">
-                <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML Projects" class="project-img" loading="lazy">
-                <h3>HTML Projects</h3>
-                <p>Semantic markup, accessibility, responsive design</p>
-            </a>
-
-            <!-- CSS Projects -->
-            <a href="./src/Project/css/css-folder.html" class="project-card">
-                <img src="https://img.icons8.com/color/96/css3.png" alt="CSS Projects" class="project-img" loading="lazy">
-                <h3>CSS Projects</h3>
-                <p>Flexbox, Grid, animations, responsive layouts</p>
-            </a>
-
-            <!-- JavaScript Projects -->
-            <a href="./src/Project/javaScript/javScript-folder.html" class="project-card">
-                <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="JavaScript Projects" class="project-img" loading="lazy">
-                <h3>JavaScript Projects</h3>
-                <p>ES6+, DOM manipulation, async/await, promises</p>
-            </a>
-
-            <!-- Bootstrap Projects -->
-            <a href="./src/Project/bootstrap/cake-web.html" class="project-card">
-                <img src="https://img.icons8.com/color/96/bootstrap.png" alt="Bootstrap Projects" class="project-img" loading="lazy">
-                <h3>Bootstrap Projects</h3>
-                <p>Responsive frameworks and component libraries</p>
-            </a>
-
-            <!-- React Projects -->
-            <a href="https://guileless-pavlova-7c3260.netlify.app/" class="project-card" target="_blank" rel="noopener noreferrer">
-                <img src="https://img.icons8.com/color/96/react-native.png" alt="React Projects" class="project-img" loading="lazy">
-                <h3>React Projects</h3>
-                <p>Building optimized UIs using React with Vite</p>
-            </a>
-
-            <!-- Test Cases -->
-            <a href="./src/Project/testcase/testcase-folder.html" class="project-card">
-                <img src="https://img.icons8.com/color/96/test-tube.png" alt="Test Cases" class="project-img" loading="lazy">
-                <h3>Test Cases</h3>
-                <p>Quality assurance and testing documentation</p>
-            </a>
-
-            <!-- Assignments -->
-            <a href="./src/Project/logical/assignment.html" class="project-card">
-                <img src="https://img.icons8.com/color/96/code.png" alt="Assignments" class="project-img" loading="lazy">
-                <h3>Assignment</h3>
-                <p>Coding challenges and problem-solving exercises</p>
-            </a>
-
-            <!-- Live Projects -->
-            <a href="./src/Project/live-project/project.html" class="project-card">
-                <img src="https://img.icons8.com/color/96/project.png" alt="Live Projects" class="project-img" loading="lazy">
-                <h3>Live Projects</h3>
-                <p>Real-world applications and deployed solutions</p>
-            </a>
-        </div>
+      </div>
     </section>
 
-  
-    <!---------- CONTACT SECTION --------->
-   
- 
-    <section class="contact-container" id="contact">
-        <div class="contact-content">
-            <!-- Left side - Contact information -->
-            <div class="contact-info">
-                <h1 class="contact-title">Let's <span>Connect</span></h1> 
+    <!-- Food Menu Section -->
+    <section class="menu-section" id="food-menu">
+      <h2 class="menu-title">Our Menu</h2>
+      <div class="menu-tabs">
+        <a data-filter="all" class="active">All Items</a>
+        <a data-filter="starters">Starters</a>
+        <a data-filter="wharadi">Wharadi Special</a>
+        <a data-filter="non-veg">Non-Veg</a>
+        <a data-filter="punjabi">Punjabi</a>
+        <a data-filter="rice">Rice & Biryani</a>
+        <a data-filter="lentils">Lentils & Curry</a>
+        <a data-filter="breads">Breads</a>
+        <a data-filter="beverages">Beverages</a>
+      </div>
+      <div class="menu-container">
+        <!-- STARTERS SECTION -->
+        <div class="category-header" data-category="starters">🍽️ STARTERS</div>
 
-                <div class="contact-details">
-                    <!-- Email Contact -->
-                    <a href="mailto:bondredivya12@gmail.com" class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <div class="contact-label">Email</div>
-                            <div class="contact-value">bondredivya12@gmail.com</div>
-                        </div>
-                    </a>
-
-                    <!-- Phone Contact -->
-                    <a href="tel:+919699967561" class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <div class="contact-label">Phone</div>
-                            <div class="contact-value">+91 96********</div>
-                        </div>
-                    </a>
-
-                    <!-- Location -->
-                    <a href="https://www.google.com/maps/place/Nagpur,+Maharashtra,+India" target="_blank" rel="noopener noreferrer" class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <div class="contact-label">Location</div>
-                            <div class="contact-value">Nagpur, Maharashtra, India</div>
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-            <!-- Right side - Contact form -->
-            <div class="contact-form-container">
-                <h3 class="form-title">Send Me a Message</h3>
-                <form class="contact-form" action="#" method="POST">
-                    <div class="form-group">
-                        <input type="text" class="form-input" name="name" placeholder="Your Name *" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="email" class="form-input" name="email" placeholder="Your Email *" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="text" class="form-input" name="subject" placeholder="Subject *" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <textarea class="form-textarea" name="message" placeholder="Your Message *" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="form-submit">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
-            </div>
+        <!-- Veg Starters -->
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            alt="Paneer Tikka"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Paneer Tikka</p>
+            <p class="menu-description">
+              Grilled cottage cheese cubes marinated in spices
+            </p>
+          </div>
+          <p class="menu-price">₹273</p>
         </div>
 
-        <!-- Social Media Section -->
-        <div class="social-section">
-            <h3 class="social-title">Follow Me On Social Media</h3>
-            <div class="social-links">
-                <!-- GitHub -->
-                <a href="https://github.com/DivyaFullStackDeveloper/Div_Portfolio" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit GitHub profile">
-                    <i class="fab fa-github"></i>
-                </a>
-                
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/divya-bondre-23a330321/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit LinkedIn profile">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                
-                
-
-                 <!-- Email -->
-                <a href="mailto:bondredivya12@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit LinkedIn profile">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-              
-                 <!-- loation -->
-                <a href="https://www.google.com/maps/place/Nagpur,+Maharashtra,+India" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit LinkedIn profile">
-                    <!-- <i class="fa-solid fa-envelope"></i> -->
-                     <i class="fa-solid fa-location-dot"></i>
-                </a>
-               
-            </div>
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            alt="Paneer Malai Tikka"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Paneer Malai Tikka</p>
+            <p class="menu-description">
+              Creamy cottage cheese tikka with cashew paste
+            </p>
+          </div>
+          <p class="menu-price">₹273</p>
         </div>
 
-        <!-- Footer note -->
-        <div class="footer-note">
-            <p>© 2024 <span class="highlight">Divya Bondre</span>. All rights reserved.</p>
-            
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/hara-bhara-kabab.webp"
+            alt="Hara Bhara Kabab"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Hara Bhara Kabab</p>
+            <p class="menu-description">
+              Green vegetable patties with spinach and peas
+            </p>
+          </div>
+          <p class="menu-price">₹186</p>
         </div>
+
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://www.yumcurry.com/wp-content/uploads/2018/06/cabbage-manchurian-dry-recipe.jpg"
+            alt="Veg Manchurian"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Veg Manchurian</p>
+            <p class="menu-description">Mixed vegetable balls in tangy sauce</p>
+          </div>
+          <p class="menu-price">₹156</p>
+        </div>
+
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            alt="Veg Noodles"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Veg Noodles</p>
+            <p class="menu-description">
+              Stir-fried noodles with fresh vegetables
+            </p>
+          </div>
+          <p class="menu-price">₹195</p>
+        </div>
+
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://i.ytimg.com/vi/cu5EbFkz8Og/maxresdefault.jpg"
+            alt="Crispy Veg"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Crispy Veg</p>
+          </div>
+          <p class="menu-price">₹221</p>
+        </div>
+
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://b.zmtcdn.com/data/dish_photos/0e3/90e45bfc696d813b62cc0f2fcc22d0e3.jpeg?fit=around|130:130&crop=130:130;*,*"
+            alt="Chilli Paneer"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chilli Paneer</p>
+          </div>
+          <p class="menu-price">₹221</p>
+        </div>
+
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://www.vegrecipesofindia.com/wp-content/uploads/2025/03/paneer-pakoda-1.jpg"
+            alt="Paneer Pakoda"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Paneer Pakoda</p>
+          </div>
+          <p class="menu-price">₹208</p>
+        </div>
+
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFouxY7OOEXhSZkTdlRiOfshfcUJVHZkM3Sw&s"
+            alt="Paneer Black Pepper"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Paneer Black Pepper</p>
+          </div>
+          <p class="menu-price">₹234</p>
+        </div>
+        <!-- Noodles -->
+        <div class="category-header" data-category="starters">Noodles</div>
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://media.istockphoto.com/id/1493015951/photo/chinese-fried-beef-noodles-served-on-platter.jpg?s=612x612&w=0&k=20&c=hnrYep182u3JKzJ3WhhQCI8OF9dmvEL1XcmnK2XNxDY="
+            alt="Veg Noodles"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Veg Noodles</p>
+          </div>
+          <p class="menu-price">₹195</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://media.istockphoto.com/id/921668184/photo/plate-of-noodles-with-meat-and-vegetables.jpg?s=612x612&w=0&k=20&c=Au_4Kw0qgWeTxt1vCkwEAf8Ec6sNLWZI9S0waxUxj_Q="
+            alt="Chicken Noodles"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Noodles</p>
+          </div>
+          <p class="menu-price">₹247</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://media.istockphoto.com/id/1091710264/photo/schezwan-hakka-noodles-with-paneer-or-cottage-cheese-served-in-a-bowl-selective-focus.jpg?s=612x612&w=0&k=20&c=dpd_vuQCr9bPoHo4BidNeESkPZ4RB_gbOla5G0se3qU="
+            alt="Chicken Schezwan Noodles"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Schezwan Noodles</p>
+          </div>
+          <p class="menu-price">₹247</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://media.istockphoto.com/id/495307585/photo/fried-rice-noodles.jpg?s=612x612&w=0&k=20&c=Rsgb56tgtbPPHwXyBsUyA2ex2cHyuRuyxgd0iUNEX2U="
+            alt="Chicken Garlic Noodles"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Garlic Noodles</p>
+          </div>
+          <p class="menu-price">₹247</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://onlinekrishnasweets.com/wp-content/uploads/2021/09/images282729.jpeg"
+            alt="Mix Noodles"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Mix Noodles</p>
+          </div>
+          <p class="menu-price">₹286</p>
+        </div>
+
+        <!-- Fried Rice -->
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdYscNsOtcOqTmjr0kQES62GqlrNLyk3D7Lg&s"
+            alt="Chicken Fried Rice"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Fried Rice</p>
+          </div>
+          <p class="menu-price">₹260</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8X5Y5lDh52Skqz1HBhNOhSt9Rex-ByOUM-g&s"
+            alt="Egg Fried Rice"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Egg Fried Rice</p>
+          </div>
+          <p class="menu-price">₹156</p>
+        </div>
+
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSArsSbqDH0Mx-Ix9yATNJk9coibsBcTKAXbA&s"
+            alt="Garlic Fried Rice"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Garlic Fried Rice</p>
+          </div>
+          <p class="menu-price">₹156</p>
+        </div>
+
+        <!-- Quick Starters -->
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNnE1fxjY2GoIjFgEaDp8UzHhvb9MGJetD-3MVN6LTUMz0_lyu5E40hjH6WGVAHqCb_sk&usqp=CAU"
+            alt="Veg Noodles (Small)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Veg Noodles (Small)</p>
+          </div>
+          <p class="menu-price">₹130</p>
+        </div>
+
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/040/986/112/non_2x/ai-generated-indian-biryani-rice-professional-advertising-foodgraphy-photo.jpg"
+            alt="Veg Fried Rice"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Veg Fried Rice</p>
+          </div>
+          <p class="menu-price">₹143</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://littlespicejar.com/wp-content/uploads/2023/01/Gochujang-Noodles-6-710x1065.jpg"
+            alt="Egg Noodles"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Egg Noodles</p>
+          </div>
+          <p class="menu-price">₹169</p>
+        </div>
+
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://www.yummytummyaarthi.com/wp-content/uploads/2014/10/1-38-1.jpg"
+            alt="Schezwan Noodles"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Schezwan Noodles</p>
+          </div>
+          <p class="menu-price">₹169</p>
+        </div>
+
+        <div class="menu-item" data-category="starters">
+          <img
+            src="https://i.ytimg.com/vi/-2JCGiaAVf0/maxresdefault.jpg"
+            alt="Veg Manchurian Noodles"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Veg Manchurian Noodles</p>
+          </div>
+          <p class="menu-price">₹195</p>
+        </div>
+        <!-- Non-Veg Starters -->
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://sinfullyspicy.com/wp-content/uploads/2014/03/1200-by-1200-images-2-500x500.jpg"
+            alt="Chicken Tikka"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Tikka</p>
+            <p class="menu-description">
+              Tender chicken pieces marinated and grilled
+            </p>
+          </div>
+          <p class="menu-price">₹325</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO4xXTPqHPFI7YubNc9Wq9ekn14usUWN-Yvw&s"
+            alt="Tandoori Kabab"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Tandoori Kabab</p>
+            <p class="menu-description">
+              Spiced minced meat skewers from tandoor
+            </p>
+          </div>
+          <p class="menu-price">₹260</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            alt="Chicken Malai Tikka"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Malai Tikka</p>
+            <p class="menu-description">
+              Creamy chicken tikka with cashew marinade
+            </p>
+          </div>
+          <p class="menu-price">₹325</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            alt="Tandoori Chicken"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Tandoori Chicken</p>
+            <p class="menu-description">Classic tandoor roasted chicken</p>
+          </div>
+          <p class="menu-price">₹494 (Full)</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://b.zmtcdn.com/data/dish_photos/b39/d5af1738b695cbff8171b73852e5cb39.jpeg?fit=around|130:130&crop=130:130;*,*"
+            alt="Chilli Chicken"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chilli Chicken</p>
+          </div>
+          <p class="menu-price">₹247</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://media.istockphoto.com/id/1993140933/photo/spicy-deep-fried-korean-chicken.jpg?s=612x612&w=0&k=20&c=UccldIdLLzmnm2guBxSu-R0IA77Ml5rmExDs_vU0AtI="
+            alt="Chicken Manchurian"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Manchurian</p>
+          </div>
+          <p class="menu-price">₹247</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://media.istockphoto.com/id/504478110/photo/fried-chicken-with-spicy-sauce-on-white-dish.jpg?s=612x612&w=0&k=20&c=qJn-lhwGXnZkqH7mxeaFDqeSGt2wW7wI-lY3uk54oYk="
+            alt="Garlic Chicken"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Garlic Chicken</p>
+          </div>
+          <p class="menu-price">₹260</p>
+        </div>
+
+        <div class="menu-item" data-category="starters non-veg">
+          <img
+            src="https://media.istockphoto.com/id/1155369658/photo/sweet-and-sour-chicken-in-a-bowl-with-rice.jpg?s=612x612&w=0&k=20&c=f62WdNTpo5l4_K41vN42LlfqzkM03-aC8zpw_QWCHNI="
+            alt="Black Pepper Chicken"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Black Pepper Chicken</p>
+          </div>
+          <p class="menu-price">₹299</p>
+        </div>
+
+        <!-- WHARADI SPECIAL SECTION -->
+        <div class="category-header" data-category="wharadi">
+          🌶️ WHARADI SPECIAL
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://images.archanaskitchen.com/images/recipes/indian/main-course/north-indian-vegetarian-recipes/sabzi-recipes/Zunka_12a4f44da3.jpg"
+            alt="Zunka"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Zunka</p>
+            <p class="menu-description">
+              Traditional Maharashtrian gram flour curry
+            </p>
+          </div>
+          <p class="menu-price">₹104</p>
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://foodsandflavorsbyshilpi.com/wp-content/uploads/2021/04/NEW-FB-Thumbnails-Website-2021-4-1.jpg"
+            alt="Baigan Bharit"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Fry Bharit (Mashed)</p>
+            <p class="menu-description">Roasted and mashed eggplant curry</p>
+          </div>
+          <p class="menu-price">₹169</p>
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://signatureconcoctions.com/wp-content/uploads/2023/11/image-23.png"
+            alt="Kanda Bharit (Mashed Onion)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Kanda Bharit (Mashed Onion)</p>
+          </div>
+          <p class="menu-price">₹195</p>
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://i.ytimg.com/vi/QU6RyOd9qGE/maxresdefault.jpg"
+            alt="Baigan Rassa (Gravy)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Baigan Rassa (Gravy)</p>
+          </div>
+          <p class="menu-price">₹156</p>
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://www.chefajaychopra.com/assets/img/imageupload/0-1735281397Screenshot2024-12-27120447webp.webp"
+            alt="Baingan Masala"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Baingan Masala</p>
+          </div>
+          <p class="menu-price">₹169</p>
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://i.ytimg.com/vi/Hjbb9g3favI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDjWjQJYl72X1exow4e0li7wpFvXw"
+            alt="Methi Masala"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Methi Masala</p>
+          </div>
+          <p class="menu-price">₹130</p>
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://i0.wp.com/paattiskitchen.com/wp-content/uploads/2023/01/kmc_20230129_200720-1.jpg?resize=480%2C270&ssl=1"
+            alt="Puri Bhaji Rassa (Seasonal)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Puri Bhaji Rassa (Seasonal)</p>
+          </div>
+          <p class="menu-price">₹195</p>
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://i.ytimg.com/vi/K20nc65claw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDq6yg9lvkW4GQT-jEZZ9bCtei1CQ"
+            alt="Potato Bhaji Rassa (Seasonal)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Potato Bhaji Rassa (Seasonal)</p>
+          </div>
+          <p class="menu-price">₹195</p>
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://thumbs.dreamstime.com/b/handi-paneer-gravy-dish-liquified-blended-mixture-tomatoes-green-chillies-ginger-other-ingredients-addition-249378444.jpg"
+            alt="Handi Paneer"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Handi Paneer</p>
+          </div>
+          <p class="menu-price">₹208</p>
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://freshoneed.com/cdn/shop/files/Sev_bhaji.png?v=1745480313&width=1445"
+            alt="Shev Bhaji"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Shev Bhaji</p>
+          </div>
+          <p class="menu-price">₹156</p>
+        </div>
+        <!-- 🫓 Papad -->
+        <div class="category-header" data-category="wharadi">🫓 OTHER</div>
+        <div class="menu-item" data-category="roti">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2023/6/317813351/RO/JM/BI/156918706/jeera-rice-khichiya-papad-500x500.jpeg"
+            alt="Khichiya Papad"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Khichiya Papad</p>
+          </div>
+          <p class="menu-price">₹40</p>
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://images.archanaskitchen.com/images/recipes/basic-advanced-cooking-techniques/How_to_roast_papad_71cdeda918.jpg"
+            alt="Roasted Papad"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Roasted Papad</p>
+          </div>
+          <p class="menu-price">₹20</p>
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://b.zmtcdn.com/data/menus/353/21439353/3e47685d344d680da5e223c93c938241.jpg?fit=around|200:200&crop=200:200;*,*"
+            alt="Masala Papad"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Masala Papad</p>
+          </div>
+          <p class="menu-price">₹35</p>
+        </div>
+
+        <div class="menu-item" data-category="wharadi">
+          <img
+            src="https://bfoodale.com/uploads/2021/12/Roast-Papad-362x362.jpg"
+            alt="Fry Papad"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Fry Papad</p>
+          </div>
+          <p class="menu-price">₹25</p>
+        </div>
+        <!-- PUNJABI DISHES SECTION -->
+        <div class="category-header" data-category="punjabi">
+          🧈 PUNJABI SPECIALTIES
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/01/paneer-lababdar.jpg"
+            alt="Paneer Lababdar"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Paneer Lababdar</p>
+            <p class="menu-description">
+              Rich cottage cheese curry in tomato gravy
+            </p>
+          </div>
+          <p class="menu-price">₹273</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/paneer-butter-masala-recipe.jpg"
+            alt="Paneer Butter Masala"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Paneer Butter Masala</p>
+            <p class="menu-description">
+              Creamy cottage cheese in buttery tomato sauce
+            </p>
+          </div>
+          <p class="menu-price">₹247</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://c.ndtvimg.com/hoqnolg8_kadai-paneer,-recipe_625x300_20_July_18.jpg"
+            alt="Kadhai Paneer"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Kadhai Paneer</p>
+            <p class="menu-description">
+              Cottage cheese cooked with bell peppers in kadhai
+            </p>
+          </div>
+          <p class="menu-price">₹273</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://indianshealthyrecipes.com/wp-content/uploads/2024/07/ShahiPaneer-3.jpg"
+            alt="Shahi Paneer"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Shahi Paneer</p>
+          </div>
+          <p class="menu-price">₹273</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPu3edeqXdrKGacHTt7WNtULrNfmWgF3eIQ&s"
+            alt="Paneer Tikka Masala"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Paneer Tikka Masala</p>
+          </div>
+          <p class="menu-price">₹286</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwBP0y-YJwbFR8rX5ShGpyVHfn_5JQeJsZA&s"
+            alt="Paneer Masala"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Paneer Masala</p>
+          </div>
+          <p class="menu-price">₹273</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk1VfD2E1Emilq1BEXOCwWxXESmrWUxu7JonKpZsxEKKwcH3xSXWqE40zhm8rQP7Lh6Ng&usqp=CAU"
+            alt="Mix Veg Handi"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Mix Veg Handi</p>
+          </div>
+          <p class="menu-price">₹234</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-3.jpg"
+            alt="Palak Paneer"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Palak Paneer</p>
+          </div>
+          <p class="menu-price">₹234</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://cdn2.foodviva.com/static-content/food-images/curry-recipes/veg-kolhapuri/veg-kolhapuri.jpg"
+            alt="Veg Kolhapuri"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Veg Kolhapuri</p>
+          </div>
+          <p class="menu-price">₹234</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://www.scrumptiously.com/wp-content/uploads/2024/10/MoongDalTadka.webp"
+            alt="Dal Tadka (Yellow)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Dal Tadka (Yellow)</p>
+          </div>
+          <p class="menu-price">₹208</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://vismaifood.com/storage/app/uploads/public/4ea/e2c/3d1/thumb__700_0_0_0_auto.jpg"
+            alt="Veg Kheema Masala"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Veg Kheema Masala</p>
+          </div>
+          <p class="menu-price">₹286</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpE3Iuvz2IB82tziXgXxcPd6wGJ2wESWdOtUsI_qqHymVPsfQdz2Nl_ZO-cbEvvkApTpk&usqp=CAU"
+            alt="Paneer Punjabi"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Paneer Punjabi</p>
+          </div>
+          <p class="menu-price">₹273</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://c.ndtvimg.com/2022-12/sdom33v8_paneer-pasanda_625x300_08_December_22.jpg"
+            alt="Paneer Pasanda"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Paneer Pasanda</p>
+          </div>
+          <p class="menu-price">₹286</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://carveyourcraving.com/wp-content/uploads/2021/09/Best-Malai-Kofta-recipe.jpg"
+            alt="Malai Kofta"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Malai Kofta</p>
+          </div>
+          <p class="menu-price">₹260</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzzOo07zWux-PLCO9dW5nVgO02WVnG2fyenw&s"
+            alt="Methi Mutter Malai"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Methi Mutter Malai</p>
+          </div>
+          <p class="menu-price">₹247</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://i.pinimg.com/564x/6a/fd/8c/6afd8c0ad11b3a5451fa0f20403d6e9e.jpg"
+            alt="Kaju Curry (White Gravy)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Kaju Curry (White Gravy)</p>
+          </div>
+          <p class="menu-price">₹247</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://i.pinimg.com/736x/b2/67/e3/b267e37a01ebe53a4a1be5e709a1d474.jpg"
+            alt="Kaju Curry (Red Gravy)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Kaju Curry (Red Gravy)</p>
+          </div>
+          <p class="menu-price">₹234</p>
+        </div>
+
+        <div class="menu-item" data-category="punjabi">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77e4hWQvEb3wYT-1hJP7175q3vMRT2Wz0Fw&s"
+            alt="Veg Bhuna"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Veg Bhuna</p>
+          </div>
+          <p class="menu-price">₹247</p>
+        </div>
+
+        <!-- NON-VEG DISHES SECTION -->
+        <!--   Egg Dishes   -->
+        <div class="category-header" data-category="non-veg">Egg Dishes</div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://www.blueberriesfoods.com/wp-content/uploads/2018/10/Egg-Curry-1.png"
+            alt="Egg Handi Curry"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Egg Handi Curry</p>
+          </div>
+          <p class="menu-price">₹130</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://c.ndtvimg.com/2021-11/8dmk5frg_kerala-egg-curry_625x300_19_November_21.jpg"
+            alt="Egg Curry"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Egg Curry</p>
+          </div>
+          <p class="menu-price">₹117</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNHDpIps8re1t_-gSQokn-2g8Q1Oyjj16Jmg&s"
+            alt="Egg Masala"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Egg Masala</p>
+          </div>
+          <p class="menu-price">₹130</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://www.whiskaffair.com/wp-content/uploads/2022/06/Boiled-Egg-Bhurji-2-3.jpg"
+            alt="Egg Bhurji"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Egg Bhurji</p>
+          </div>
+          <p class="menu-price">₹91</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://www.the-girl-who-ate-everything.com/wp-content/uploads/2011/04/how-to-hard-boil-eggs-15.jpg"
+            alt="Egg Boil"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Egg Boil</p>
+          </div>
+          <p class="menu-price">₹39</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://www.potsandpans.in/cdn/shop/articles/20250122065218-blog-20templates.webp?v=1737528945"
+            alt="Egg Fry"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Egg Fry</p>
+          </div>
+          <p class="menu-price">₹52</p>
+        </div>
+
+        <!--   Chicken Dishes   -->
+        <div class="category-header" data-category="non-veg">
+          🍗 Chicken Dishes
+        </div>
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRstR00NpfAfQAJYPLvUkIUGasUVvxmHJv7HQ&s"
+            alt="Chicken Handi"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Handi</p>
+          </div>
+          <p class="menu-price">₹260</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Instant-Pot-Chicken-Curry-Recipe-500x500.jpg"
+            alt="Chicken Curry"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Curry</p>
+          </div>
+          <p class="menu-price">₹260</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/08/chicken-masala-recipe.jpg"
+            alt="Chicken Masala"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Masala</p>
+          </div>
+          <p class="menu-price">₹247</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://theyummydelights.com/wp-content/uploads/2019/11/chicken-bhuna-masala.jpg"
+            alt="Chicken Bhuna"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Bhuna</p>
+          </div>
+          <p class="menu-price">₹286</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://i.ytimg.com/vi/_kkosy25Yuc/maxresdefault.jpg"
+            alt="Chicken Handi (Full)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Handi (Full)</p>
+          </div>
+          <p class="menu-price">₹858</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_240,h_240/FOOD_CATALOG/IMAGES/CMS/2025/1/12/a2da7e14-d7e2-4ad6-ba18-5b2d6ef9abfe_c55b0c25-002a-4153-b0f1-2731172828ee.jpg_compressed"
+            alt="Chicken Handi (Half)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Handi (Half)</p>
+          </div>
+          <p class="menu-price">₹468</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://www.licious.in/blog/wp-content/uploads/2020/10/butter-chicken--600x600.jpg"
+            alt="Butter Chicken"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Butter Chicken</p>
+          </div>
+          <p class="menu-price">₹312</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://i.ytimg.com/vi/_kkosy25Yuc/maxresdefault.jpg"
+            alt="Handi Chicken"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Handi Chicken</p>
+          </div>
+          <p class="menu-price">₹273</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://i.ytimg.com/vi/d8Su60y_JPc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCXAkl914O77smyNa-_sSygU_SOLg"
+            alt="Chicken Kolhapuri"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Kolhapuri</p>
+          </div>
+          <p class="menu-price">₹286</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8-3eUT8FEB4o27_9mJRlYYEXF4_ZGytzDV1eVOsu21c62TbyHGSophAQidb_7mtZO4sY&usqp=CAU"
+            alt="Chicken Rassa (Extra)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Rassa (Extra)</p>
+          </div>
+          <p class="menu-price">₹65</p>
+        </div>
+
+        <!-- Mutton Dishes   -->
+        <div class="category-header" data-category="non-veg">
+          🍗 Mutton Dishes
+        </div>
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://purendesi.in/wp-content/uploads/2024/02/handi-mutton-recipe-in-hindi.jpg"
+            alt="Mutton Handi"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Mutton Handi</p>
+          </div>
+          <p class="menu-price">₹364</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://c.ndtvimg.com/2023-01/oqp7e4cg_mutton-curry_625x300_21_January_23.jpg"
+            alt="Mutton Curry"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Mutton Curry</p>
+          </div>
+          <p class="menu-price">₹377</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSweB2zXMH_xJx2XWnFq-gBgY8XGLpRdOJKjv6faI6LSycHi_Xfyb6cJW9UzXql_mbm-bk&usqp=CAU"
+            alt="Mutton Masala"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Mutton Masala</p>
+          </div>
+          <p class="menu-price">₹390</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://www.licious.in/blog/wp-content/uploads/2020/12/Mutton-Bhuna.jpg"
+            alt="Mutton Bhuna"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Mutton Bhuna</p>
+          </div>
+          <p class="menu-price">₹364</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoMDIk5AhThpIVRkix6DZlJLfx17mGy4MYDYjXTb4E9cFNAq0s90TKUdJmgxIFT7r_r4&usqp=CAU"
+            alt="Mutton Handi (Full)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Mutton Handi (Full)</p>
+          </div>
+          <p class="menu-price">₹1560</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://images.raasakarts.com/insecure/fit/1000/1000/ce/0/plain/https://rasakart-assets.s3.ap-south-1.amazonaws.com/3fa229/prods/0XLX3hdFhdpD6W2ziWrNRqWvg4dV51fYrDkzmtbq.jpg@webp"
+            alt="Mutton Handi (Half)"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Mutton Handi (Half)</p>
+          </div>
+          <p class="menu-price">₹910</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3HrNzcKPGXLXpAc4nUoEQxq8L9F55mUVwoQ&s"
+            alt="Mutton Rogan Josh"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Mutton Rogan Josh</p>
+          </div>
+          <p class="menu-price">₹390</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://www.ndtv.com/cooks/images/mutton-kohlapuri-med.jpg"
+            alt="Mutton Kolhapuri"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Mutton Kolhapuri</p>
+          </div>
+          <p class="menu-price">₹364</p>
+        </div>
+
+        <div class="menu-item" data-category="non-veg">
+          <img
+            src="https://www.licious.in/blog/wp-content/uploads/2020/12/Mutton-Masala-min.jpg"
+            alt="Mutton Hyderabadi"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Mutton Hyderabadi</p>
+          </div>
+          <p class="menu-price">₹390</p>
+        </div>
+
+        <!-- RICE & BIRYANI SECTION -->
+        <div class="category-header" data-category="rice">
+          🍚 RICE & BIRYANI
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            alt="Jeera Rice"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Jeera Rice</p>
+            <p class="menu-description">Cumin flavored basmati rice</p>
+          </div>
+          <p class="menu-price">₹117</p>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQgUUnADV7a0p7ujwXHyA8UnCT59idw5ZXNQ&s"
+            alt="Plain Rice Full"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Plain Rice (Full)</p>
+          </div>
+          <p class="menu-price">₹104</p>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://www.noracooks.com/wp-content/uploads/2021/04/sq-4-300x300.jpg"
+            alt="Plain Rice Half"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Plain Rice (Half)</p>
+          </div>
+          <p class="menu-price">₹65</p>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src=".https://i.ytimg.com/vi/raUlcCUnEZs/maxresdefault.jpg"
+            alt="Jeera Rice Full"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Jeera Rice (Full)</p>
+          </div>
+          <p class="menu-price">₹117</p>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://i.ytimg.com/vi/raUlcCUnEZs/maxresdefault.jpg"
+            alt="Jeera Rice Half"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Jeera Rice (Half)</p>
+          </div>
+          <p class="menu-price">₹65</p>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://i.ytimg.com/vi/KuADlnDmgjI/sddefault.jpg"
+            alt="Gola Bhat"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Gola Bhat</p>
+          </div>
+          <p class="menu-price">₹195</p>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://madhurasrecipe.com/wp-content/uploads/2020/10/Veg-Pulao.jpg"
+            alt="Veg Pulao"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Veg Pulao</p>
+          </div>
+          <p class="menu-price">₹156</p>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://yumtumbhojana.com/wp-content/uploads/2022/05/garlic_jeera_rice_1.jpeg?w=1024"
+            alt="Jeera Garlic Rice"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Jeera Garlic Rice</p>
+          </div>
+          <p class="menu-price">₹143</p>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://dukaan.b-cdn.net/700x700/webp/257529/67bc4f2f-db29-4f41-afc7-cf37a90a59e6.png"
+            alt="Butter Dal Khichdi"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Butter Dal Khichdi</p>
+          </div>
+          <p class="menu-price">₹195</p>
+        </div>
+
+        <!-- Biryani under Rice Category -->
+        <div class="category-header" data-category="rice">🍚 BIRYANI</div>
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://i.ytimg.com/vi/cB288Jo5SF8/maxresdefault.jpg"
+            alt="Veg Biryani"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Veg Biryani</p>
+          </div>
+          <p class="menu-price">₹234</p>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://www.indianhealthyrecipes.com/wp-content/uploads/2020/02/instant-pot-egg-biryani-500x500.jpg"
+            alt="Egg Biryani"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Egg Biryani</p>
+          </div>
+          <p class="menu-price">₹208</p>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPcdlgGqTXb-qtbAK_WgscTy2TimgPjzn9fw&s"
+            alt="Chicken Biryani"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Chicken Biryani</p>
+          </div>
+          <p class="menu-price">₹285</p>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://i.ytimg.com/vi/s4YsKuoYTe8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA8DNcG2opFjrju1AlULhM7SOQLfA"
+            alt="Mutton Biryani"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Mutton Biryani</p>
+          </div>
+          <p class="menu-price">₹286</p>
+        </div>
+
+        <div class="menu-item" data-category="rice">
+          <img
+            src="https://revi.b-cdn.net/wp-content/uploads/2017/01/paneer-biryani-1.jpg"
+            alt="Paneer Biryani"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Paneer Biryani</p>
+          </div>
+          <p class="menu-price">₹208</p>
+        </div>
+        <!-- LENTILS & CURRY SECTION -->
+        <div class="category-header" data-category="lentils">
+          🥣 LENTILS & CURRY (Dal)
+        </div>
+
+        <div class="menu-item" data-category="lentils">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKHW2NYsNYLMUHjp-NCDk-pKuwqMQ3JHM8g&s"
+            alt="Dal Fry"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Dal Fry</p>
+          </div>
+          <p class="menu-price">₹104</p>
+        </div>
+
+        <div class="menu-item" data-category="lentils">
+          <img
+            src="https://www.cookingandme.com/wp-content/uploads/2012/09/8012166554_467eaa3730_z.jpg"
+            alt="Jeera Dal"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Jeera Dal</p>
+          </div>
+          <p class="menu-price">₹104</p>
+        </div>
+
+        <div class="menu-item" data-category="lentils">
+          <img
+            src="https://img.clearcals.com/recipes/e709dce42902862769f0e00b997ca40c7a1fc3ff/medium.jpg"
+            alt="Sadhi Dal"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Sadhi Dal</p>
+          </div>
+          <p class="menu-price">₹91</p>
+        </div>
+
+        <div class="menu-item" data-category="lentils">
+          <img
+            src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/04/dal-tadka-recipe-500x500.jpg"
+            alt="Dal Tadka"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Dal Tadka</p>
+          </div>
+          <p class="menu-price">₹104</p>
+        </div>
+
+        <!-- BREADS SECTION -->
+        <div class="category-header" data-category="breads">🫓 BREADS</div>
+
+        <div class="menu-item" data-category="breads">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcWwi2mgexZ5najLbkq-x_MaTaEZtf-9d2XA&s"
+            alt="Roti"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Roti / Chapati</p>
+            <p class="menu-description">Whole wheat flatbread</p>
+          </div>
+          <p class="menu-price">₹15</p>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <img
+            src="https://5.imimg.com/data5/PX/EF/MY-34988579/phulka-chapati.jpg"
+            alt="Phulka Chapati"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Phulka Chapati</p>
+          </div>
+          <p class="menu-price">₹12</p>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <img
+            src="https://tawasigdi.in/wp-content/uploads/2025/06/Butter-tandoori-roti.webp"
+            alt="Tandoor Roti"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Tandoor Roti</p>
+          </div>
+          <p class="menu-price">₹15</p>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <img
+            src="https://i.ytimg.com/vi/Qut7Cf0IC6E/maxresdefault.jpg"
+            alt="Ghee Chapati"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Ghee Chapati</p>
+          </div>
+          <p class="menu-price">₹20</p>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <img
+            src="https://www.whiskaffair.com/wp-content/uploads/2020/10/Jowar-Bhakri-2-3.jpg"
+            alt="Jowar Bhakri"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Jowar Bhakri</p>
+          </div>
+          <p class="menu-price">₹25</p>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <img
+            src="https://www.shutterstock.com/image-photo/jowar-roti-bhakri-maharashtra-andis-260nw-2235025157.jpg"
+            alt="Ghee Jowar Bhakri"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Ghee Jowar Bhakri</p>
+          </div>
+          <p class="menu-price">₹30</p>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBjOAaa_R99TVcKioj5wtOy88rQiopYq4mwlbu0jU4Aj7gQug58CrOojXdZWFxOXZHgS8&usqp=CAU"
+            alt="Plain Naan"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Plain Naan</p>
+          </div>
+          <p class="menu-price">₹25</p>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <img
+            src="https://fullofplants.com/wp-content/uploads/2023/05/Homemade-Naan-Bread-Restaurant-Style-Vegan-16-1400x2100.jpg"
+            alt="Butter Naan"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Butter Naan</p>
+          </div>
+          <p class="menu-price">₹30</p>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <img
+            src="https://www.foodandwine.com/thmb/Ty72YuvJyLc8d2-3XGIn0wYS9OQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-recipes-garlic-naan-step-11-20e160f7693145039be1b588e3f7e948.jpg"
+            alt="Garlic Naan"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Garlic Naan</p>
+          </div>
+          <p class="menu-price">₹50</p>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <img
+            src="https://www.spiritofindiapattaya.com/wp-content/uploads/2018/09/Butter-Roti.jpg"
+            alt="Butter Roti"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Butter Roti</p>
+          </div>
+          <p class="menu-price">₹20</p>
+        </div>
+
+        <!-- 🫓 Pangat Special Breads -->
+        <div class="category-header" data-category="breads">
+          🫓 Pangat Special Breads
+        </div>
+        <div class="menu-item" data-category="breads">
+          <img
+            src="https://cdn.dotpe.in/longtail/store-items/7916910/9P6QP42e.jpeg"
+            alt="Khava Poli"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Khava Poli</p>
+          </div>
+          <p class="menu-price">₹60</p>
+        </div>
+
+        <div class="menu-item" data-category="breads">
+          <img
+            src="https://sumafoods.com/cdn/shop/products/Poli-Puran.jpg?v=1702017426&width=1445"
+            alt="Puran Poli"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Puran Poli</p>
+          </div>
+          <p class="menu-price">₹50</p>
+        </div>
+
+        <!-- BEVERAGES SECTION -->
+        <div class="category-header" data-category="beverages">
+          🥤 BEVERAGES
+        </div>
+
+        <div class="menu-item" data-category="beverages">
+          <img
+            src="https://t4.ftcdn.net/jpg/16/27/73/19/360_F_1627731988_HyhQM3G1Vorp3yXirdzY5YGWKYWdOFsZ.jpg"
+            alt="Water Bottle"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Water Bottle</p>
+          </div>
+          <p class="menu-price">₹20</p>
+        </div>
+
+        <div class="menu-item" data-category="beverages">
+          <img
+            src="https://tiimg.tistatic.com/fp/1/008/165/all-natural-ingredients-made-delicious-sweet-tasty-cold-drink-184.jpg"
+            alt="Cold Drink"
+          />
+          <div class="menu-text">
+            <p class="menu-name">Cold Drink</p>
+          </div>
+          <p class="menu-price">₹25</p>
+        </div>
+      </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+      <h2 class="gallery-title">Our Gallery</h2>
+      <p class="gallery-subtitle">
+        Begin a delicious journey through the world of flavors - with our
+        special dishes!
+      </p>
 
-   
-    <!------- JAVASCRIPT function -------->
+      <div class="gallery-flex">
+        <img
+          src="https://flavorsofindiaraleigh.com/wp-content/uploads/2024/10/pngtree-variety-of-indian-food-is-served-on-a-table-picture-image_2778395.png"
+          alt="Biryani Special"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt="Traditional Thali"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt="Chinese Delicacies"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt="Starter Platter"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1630383249896-424e482df921?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt="South Indian"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt="Paneer Dishes"
+        />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <h2>Let's Connect</h2>
+
+      <div class="contact-boxes">
+        <div class="box">
+          <h3><i class="fas fa-address-card"></i> Contact Details</h3>
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+919876543210">+91 9876543210</a>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@pangatrestaurant.com"
+              >info@pangatrestaurant.com</a
+            >
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> At Wandli Wagh Post, Katol
+            Bypass, Katol Locality, Katol, Maharashtra 444906
+          </p>
+        </div>
+
+        <div class="box">
+          <h3><i class="far fa-clock"></i> Opening Hours</h3>
+          <p><strong>Monday - Saturday:</strong></p>
+          <p>10AM - 10PM</p>
+          <p><strong>Sunday:</strong></p>
+          <p>10AM - 9PM</p>
+        </div>
+      </div>
+
+      <div class="map-section">
+        <h3>📍 Find Your Way to Flavor!</h3>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14875.520182921745!2d78.60489517!3d21.25762302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1755404140000!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li>
+              <i class="fas fa-angle-right"></i><a href="#about">About Us</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-right"></i
+              ><a href="#contact">Contact Us</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-right"></i><a href="#food-menu">Menu</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-right"></i><a href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-right"></i
+              ><a href="#special">Special Dish</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> At Wandli Wagh Post, Katol
+              Bypass, Katol Locality, Katol, Maharashtra 444906
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+919876543210">+91 9876543210</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@pangatrestaurant.com"
+                >info@pangatrestaurant.com</a
+              >
+            </li>
+          </ul>
+
+          <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Opening Hours</h3>
+          <p><strong>Monday - Saturday</strong><br />10AM - 10PM</p>
+          <p><strong>Sunday</strong><br />10AM - 9PM</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scroll up button -->
+    <a href="#home" class="scroll-up" aria-label="Scroll to top">↑</a>
+
     <script>
-        /* Toggle mobile navigation menu */
-        function toggleMenu() {
-            const menuBtn = document.querySelector('.menu-btn');
-            const navbar = document.getElementById('navbar');
+    
 
-            menuBtn.classList.toggle('active'); 
-            navbar.classList.toggle('active');  
-        }
+      // -- toggle menu--
+      document
+        .getElementById("menuToggle")
+        .addEventListener("click", function () {
+          const mobileButtons = document.getElementById("mobileTopButtons");
+          const isVisible = mobileButtons.style.display === "flex";
+          mobileButtons.style.display = isVisible ? "none" : "flex";
 
-        /* Close menu when navigation link is clicked */
-        const navLinks = document.querySelectorAll('.navbar a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.menu-btn').classList.remove('active');
-                document.getElementById('navbar').classList.remove('active');
+          if (!isVisible) {
+            document.addEventListener("click", function closeMenu(e) {
+              if (
+                !mobileButtons.contains(e.target) &&
+                !document.getElementById("menuToggle").contains(e.target)
+              ) {
+                mobileButtons.style.display = "none";
+                document.removeEventListener("click", closeMenu);
+              }
             });
+          }
         });
 
-    </script>
+      // ----- show menu on button click -------
+      const menuBtn = document.getElementById("menuBtn");
+      const bottomNav = document.getElementById("bottomNav");
 
-</body>
+      // Toggle menu on button click
+      menuBtn.addEventListener("click", () => {
+        bottomNav.classList.toggle("active");
+      });
+
+      // Hide  menu when clicking a link
+      document.querySelectorAll("#bottomNav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth <= 768) {
+            bottomNav.classList.remove("active");
+          }
+        });
+      });
+
+      // Reset nav when resizing
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          bottomNav.classList.remove("active");
+        } else {
+          bottomNav.classList.remove("active");
+        }
+      });
+
+      //  show menu click on categories
+      const tabs = document.querySelectorAll(".menu-tabs a");
+      const items = document.querySelectorAll(".menu-item");
+      const categoryHeaders = document.querySelectorAll(".category-header");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          // Remove active class from all tabs
+          tabs.forEach((t) => t.classList.remove("active"));
+          // Add active class to clicked tab
+          tab.classList.add("active");
+
+          const filter = tab.dataset.filter;
+
+          // Add loading effect
+          const container = document.querySelector(".menu-container");
+          container.style.opacity = "0.7";
+
+          setTimeout(() => {
+            // Handle category headers
+            categoryHeaders.forEach((header) => {
+              if (filter === "all" || header.dataset.category === filter) {
+                header.classList.remove("hidden");
+              } else {
+                header.classList.add("hidden");
+              }
+            });
+
+            // Handle menu items
+            items.forEach((item) => {
+              const categories = item.dataset.category.split(" ");
+              if (filter === "all" || categories.includes(filter)) {
+                item.classList.remove("hidden");
+                item.style.animation = "fadeIn 0.5s ease-in";
+              } else {
+                item.classList.add("hidden");
+              }
+            });
+
+            container.style.opacity = "1";
+          }, 150);
+        });
+      });
+
+      //  activ navigation
+      window.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".bottom-nav a");
+
+        let currentSection = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 150;
+          const sectionHeight = section.clientHeight;
+
+          if (
+            window.scrollY >= sectionTop &&
+            window.scrollY < sectionTop + sectionHeight
+          ) {
+            currentSection = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + currentSection) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      //  carousel 
+      const carouselTrack = document.querySelector(".carousel-track");
+      if (carouselTrack) {
+        carouselTrack.addEventListener("mouseenter", () => {
+          carouselTrack.style.animationPlayState = "paused";
+        });
+
+        carouselTrack.addEventListener("mouseleave", () => {
+          carouselTrack.style.animationPlayState = "running";
+        });
+      }
+
+      //   key navigation
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          document.getElementById("mobileTopButtons").style.display = "none";
+          document.getElementById("bottomNav").classList.remove("show");
+        }
+      });
+
+      //  header effect when scroll
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          document.getElementById("mobileTopButtons").style.display = "none";
+          document.getElementById("bottomNav").classList.remove("show");
+        }
+      });
+
+      //  image handling
+      document.querySelectorAll("img").forEach((img) => {
+        img.addEventListener("error", function () {
+          this.style.backgroundColor = "#f0f0f0";
+          this.style.color = "#999";
+          this.style.display = "flex";
+          this.style.alignItems = "center";
+          this.style.justifyContent = "center";
+          this.innerHTML =
+            '<i class="fas fa-image" style="font-size: 2rem;"></i>';
+        });
+      });
+    </script>
+  </body>
 </html>
