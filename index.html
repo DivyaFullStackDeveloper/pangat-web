@@ -1,1228 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pangat Restaurant</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
 
-    <link rel="stylesheet" href="././assets/css/index.css">
-  </head>
-  <body>
-    <section class="restro-main-cnt" id="home">
-      <!-- Top Navigation -->
-      <nav class="top-nav">
-        <div class="restro-name">
-          <sup><span>पं</span><u>gat</u></sup>
-          <sub
-            ><span>R</span><u>estaurant</u>
-            <img src="./assets/image/fork-knife.png" height="30px" />
-          </sub>
-        </div>
-        <div class="nav-btns">
-          <select class="language">
-            <option>Eng</option>
-            <option>Hindi</option>
-          </select>
-          <button><a href="tel:+919876543210"></a>Book Table  </button>
-          <button id="menuBtn">Menu</button>
-        </div>
-        <button class="menu-toggle" id="menuToggle">☰</button>
-        <!-- Mobile buttons -->
-        <div class="mobile-top-buttons" id="mobileTopButtons">
-          <select class="language">
-            <option>Eng</option>
-            <option>Hindi</option>
-          </select>
-          <button><a href="tel:+919876543210">Book Table</a></button>
-          <button id="mobileMenuBtn">Menu</button>
-        </div>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya Bondre - Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./src/Project/css/index.css">
+</head>
 
-      <!-- Hero Text -->
-      <div class="home-text">
-        <p class="home-text-one">
-          Say less,<br />
-          <span class="home-text-two">serve taste</span>
-        </p>
-        <p class="tag-line">The Taste of Affection</p>
-        <button class="view-menu-btn">View menu<a href="#food-menu"></a></button>
-      </div>
+<body>
+    <!---------------- HEADER SECTION ------------>
+    <header class="header">
+        <h1 class="logo">Portfolio</h1>
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <nav class="navbar" id="navbar" role="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+             <a href="#services">Services</a> 
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-      <!-- Bottom Navigation -->
-      <nav class="bottom-nav" id="bottomNav">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#special">Special</a>
-        <a href="#food-menu">Menu</a>
-        <a href="#gallery">Gllery</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </section>
-    <!--------------about section ------------->
-    <section class="about-section" id="about">
-      <!-- Left Images -->
-      <div class="about-images">
-        <img
-          class="about-img-one"
-          src="./assets/image/PG-5.png"
-          alt="Image 1"
-          width="95px"
-        />
-        <!-- <img class="about-img-one" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3bthDh3YgAktr5Pf1n_gXWnSErCbNWa3-AyQlCWnJy3AOFGqD" alt=""  width="80px"> -->
-        <img
-          class="about-img-two"
-          src="./assets/image/PG-3.webp"
-          alt="Image 2"
-        />
-        <img
-          class="about-img-three"
-          src="./assets/image/PG-3.webp"
-          alt="Image 3"
-        />
-        <img
-          class="about-img-four"
-          src="./assets/image/PG-4.png"
-          alt="Image 4"
-        />
-      </div>
+    <!------------- HOME SECTION --------------->
+    <section id="home" class="home-container">
+        <div class="home-info">
+            <h3>Hello, it's me</h3>
+            <h2>DIVYA BONDRE</h2>
+            <p>I'm a Full-Stack Developer</p>
 
-      <!-- Right Content -->
-      <div class="about-text">
-        <h5 class="about-section-title">About Us</h5>
-        <h1>Welcome to <i class="fa fa-utensils"></i>Restoran</h1>
-        <p>
-          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-          diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.
-        </p>
-        <p>
-          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-          diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-          lorem sit clita duo justo magna dolore erat amet.
-        </p>
-
-        <div class="info-row">
-          <div class="info-box">
-            <h1>15</h1>
-            <div class="info-box-text">
-              <p>Years of</p>
-              <h6>Experience</h6>
+            <!-- Social media links -->
+            <div class="links">
+                <a href="mailto:bondredivya12@gmail.com" aria-label="Send email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/DivyaFullStackDeveloper/Div_Portfolio" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/divya-bondre-23a330321/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
             </div>
-          </div>
-          <div class="info-box">
-            <h1>50</h1>
-            <div class="info-box-text">
-              <p>Popular</p>
-              <h6>Master Chefs</h6>
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="home-logo">
+            <img src="./src/assets/image/divya1.jpeg" alt="Divya Bondre - Full Stack Developer" class="profile-logo">
+        </div>
     </section>
 
-    <!-- special Menu section -->
-<section class="special-menu" id="special"> 
- <h2 class="special-title">Pangat Special</h2>
-<div class="carousel-container">
-  <div class="carousel-track">
-    <div class="carousel-item"><img src="././assets/image/k-roti.jpeg" alt="Dish 1"></div>
-    <div class="carousel-item"><img src="././assets/image/Masala-Papad.jpg" alt="Dish 2"></div>
-    <div class="carousel-item"><img src="././assets/image/puranpoli-2.jpg" alt="Dish 3"  ></div>
-    <div class="carousel-item"><img src="././assets/image/dosa1.avif" alt="Dish 4"></div>
-    <div class="carousel-item"><img src="././assets/image/noodles.jpg" alt="Dish 5"></div>
-  </div>
-</div>
-</section>
-<!-- food menu -->
- <section class="menu-section" id="food-menu">
-      <h2 class="menu-title">Our Menu</h2>
-      <div class="menu-tabs">
-        <a data-filter="all">All</a>
-        <a data-filter="starters">Starters</a>
-        <a data-filter="wharadi">Wharadi</a>
-        <a data-filter="non-veg">Non-veg</a>
-        <a data-filter="panjabi">Panjabi</a>
-        <a data-filter="rice">Rice</a>
-         <a data-filter="lentils">Lentils</a>
-      </div>
-      <div class="menu-container">
-        <!--------------- Starters (29 Items) ----------------------------->
-        <div class="menu-item" data-category="starters veg">
+     
+    <!---------- ABOUT SECTION ------------>
+    <section class="about-container" id="about">
+        <div class="about-content">
+            <!-- Left side - Profile and stats -->
+            <div class="about-left">
 
-          <div class="menu-text">
-            <p class="menu-name">Paneer Tikka</p>
-          </div>
-          <p class="menu-price">₹273</p>
+                 <h2 class="about-title">About <span>Me</span></h2>
+                <p class="subtitle">Full-Stack Developer</p>
+                
+                <p class="about-description">
+                    I'm <strong>Divya R Bondre</strong>, a passionate <strong>Full-Stack Developer</strong> with a 
+                    strong focus on creating exceptional digital experiences. I specialize in building 
+                    <strong>responsive web applications</strong> using modern technologies like 
+                    <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>, and 
+                    <strong>React.js</strong>.
+                </p>
+
+                <!-- Action buttons -->
+                <div class="about-actions">
+                    <a href="./src/Project/resume.html" class="cv-button" download>
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                    <a href="#Contact" class="contact-button">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+                  
+            </div>
+
+            <!-- Right side - Main content -->
+            <div class="about-right">
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="highlight-title">Clean Code</div>
+                        <div class="highlight-desc">Writing maintainable, scalable, and well-documented code</div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="highlight-title">Responsive Design</div>
+                        <div class="highlight-desc">Creating seamless experiences across all devices</div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="highlight-title">Problem Solving</div>
+                        <div class="highlight-desc">Turning complex challenges into innovative solutions</div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="highlight-title">Team Player</div>
+                        <div class="highlight-desc">Collaborating effectively in agile development environments</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="menu-item" data-category="starters veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Paneer Malai Tikka</p>
-          </div>
-          <p class="menu-price">₹273</p>
-        </div>
-
-        <div class="menu-item" data-category="starters veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Hara Bhara Kabab</p>
-          </div>
-          <p class="menu-price">₹186</p>
-        </div>
-
-        <div class="menu-item" data-category="starters veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Veg Manchurian</p>
-          </div>
-          <p class="menu-price">₹156</p>
-        </div>
-
-        <div class="menu-item" data-category="starters veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Crispy Veg</p>
-          </div>
-          <p class="menu-price">₹221</p>
-        </div>
-
-        <div class="menu-item" data-category="starters veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Chilli Paneer</p>
-          </div>
-          <p class="menu-price">₹221</p>
-        </div>
-
-        <div class="menu-item" data-category="starters veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Paneer Pakoda</p>
-          </div>
-          <p class="menu-price">₹208</p>
-        </div>
-
-        <div class="menu-item" data-category="starters veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Paneer Black Pepper</p>
-          </div>
-          <p class="menu-price">₹234</p>
-        </div>
-
-        <!-- Non-Veg Starters -->
-        <div class="menu-item" data-category="starters non-veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Chicken Tikka</p>
-          </div>
-          <p class="menu-price">₹325</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Tandoori Kabab</p>
-          </div>
-          <p class="menu-price">₹260</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Chicken Malai Tikka</p>
-          </div>
-          <p class="menu-price">₹325</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Tandoori Chicken</p>
-          </div>
-          <p class="menu-price">₹494 (Full) / ₹260 (Half)</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Chilli Chicken</p>
-          </div>
-          <p class="menu-price">₹247</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Chicken Manchurian</p>
-          </div>
-          <p class="menu-price">₹247</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Garlic Chicken</p>
-          </div>
-          <p class="menu-price">₹260</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-         
-          
-          <div class="menu-text">
-            <p class="menu-name">Black Pepper Chicken</p>
-          </div>
-          <p class="menu-price">₹299</p>
-        </div>
-
-        <!-- Noodles -->
-        <div class="menu-item" data-category="starters veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Veg Noodles</p>
-          </div>
-          <p class="menu-price">₹195</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-            <div class="menu-text"> 
-            <p class="menu-name">Chicken Noodles</p>
-          </div>
-          <p class="menu-price">₹247</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-          <div class="menu-text">
-            <p class="menu-name">Chicken Schezwan Noodles</p>
-          </div>
-          <p class="menu-price">₹247</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-         
-          
-          <div class="menu-text">
-            <p class="menu-name">Chicken Garlic Noodles</p>
-          </div>
-          <p class="menu-price">₹247</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Mix Noodles</p>
-          </div>
-          <p class="menu-price">₹286</p>
-        </div>
-
-        <!-- Fried Rice -->
-        <div class="menu-item" data-category="starters non-veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Chicken Fried Rice</p>
-          </div>
-          <p class="menu-price">₹260</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Egg Fried Rice</p>
-          </div>
-          <p class="menu-price">₹156</p>
-        </div>
-
-        <div class="menu-item" data-category="starters veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Garlic Fried Rice</p>
-          </div>
-          <p class="menu-price">₹156</p>
-        </div>
-
-        <!-- Quick Starters -->
-        <div class="menu-item" data-category="starters veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Veg Noodles (Small)</p>
-          </div>
-          <p class="menu-price">₹130</p>
-        </div>
-
-        <div class="menu-item" data-category="starters veg">
-         
-
-          <div class="menu-text">
-            <p class="menu-name">Veg Fried Rice</p>
-          </div>
-          <p class="menu-price">₹143</p>
-        </div>
-
-        <div class="menu-item" data-category="starters non-veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Egg Noodles</p>
-          </div>
-          <p class="menu-price">₹169</p>
-        </div>
-
-        <div class="menu-item" data-category="starters veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Schezwan Noodles</p>
-          </div>
-          <p class="menu-price">₹169</p>
-        </div>
-
-        <div class="menu-item" data-category="starters veg">
-         
-          
-          <div class="menu-text">
-            <p class="menu-name">Veg Manchurian Noodles</p>
-          </div>
-          <p class="menu-price">₹195</p>
-        </div>
-        <!-------------- Punjabi Dishes (18 Items) ------------------->
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Paneer Lababdar</p>
-          </div>
-          <p class="menu-price">₹273</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-          
-          
-          <div class="menu-text">
-            <p class="menu-name">Paneer Butter Masala</p>
-          </div>
-          <p class="menu-price">₹247</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Kadhai Paneer</p>
-          </div>
-          <p class="menu-price">₹273</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Shahi Paneer</p>
-          </div>
-          <p class="menu-price">₹273</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Paneer Tikka Masala</p>
-          </div>
-          <p class="menu-price">₹286</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Paneer Masala</p>
-          </div>
-          <p class="menu-price">₹273</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Mix Veg Handi</p>
-          </div>
-          <p class="menu-price">₹234</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Palak Paneer</p>
-          </div>
-          <p class="menu-price">₹234</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Veg Kolhapuri</p>
-          </div>
-          <p class="menu-price">₹234</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Dal Tadka (Yellow)</p>
-          </div>
-          <p class="menu-price">₹208</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Veg Kheema Masala</p>
-          </div>
-          <p class="menu-price">₹286</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Paneer Punjabi</p>
-          </div>
-          <p class="menu-price">₹273</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Paneer Pasanda</p>
-          </div>
-          <p class="menu-price">₹286</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Malai Kofta</p>
-          </div>
-          <p class="menu-price">₹260</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Methi Mutter Malai</p>
-          </div>
-          <p class="menu-price">₹247</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
+        <!-- Skills section integrated -->
+        <section id="skill" class="skills-section">
+            <h1 class="skill-title">My <span>Skills</span></h1>
+            <div class="skill-grid">
+                <!-- HTML Skill -->
+                <div class="skill-card">
+                    <h3>HTML5</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+
+                <!-- CSS Skill -->
+                <div class="skill-card">
+                    <h3>CSS3</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+
+                <!-- JavaScript Skill -->
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+
+                <!-- ReactJS Skill -->
+                <div class="skill-card">
+                    <h3>ReactJS</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+
+                <!-- SQL Skill -->
+                <div class="skill-card">
+                    <h3>SQL</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+
+                <!-- Node.js Skill -->
+                <div class="skill-card">
+                    <h3>Node.js</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!---------- SERVICES SECTION ---------------->
+    <section class="services" id="services">
+        <h1 class="services-title">My <span>Services</span></h1>
         
-          
-          <div class="menu-text">
-            <p class="menu-name">Kaju Curry (White Gravy)</p>
-          </div>
-          <p class="menu-price">₹247</p>
+        <div class="services-container">
+            <!-- Web Development Service -->
+            <div class="service-card">
+                <img src="https://img.icons8.com/color/96/web-design.png" alt="Web Development Icon" loading="lazy">
+                <p>Web Development</p>
+                <div class="description">
+                    I build responsive, fast, and visually appealing websites using modern web technologies.
+                </div>
+            </div>
+
+            <!-- UI/UX Design Service -->
+            <div class="service-card">
+                <img src="https://img.icons8.com/?size=80&id=9x65MLqCekT5&format=png" alt="UI/UX Design Icon" loading="lazy">
+                <p>UI/UX Design</p>
+                <div class="description">
+                    I design user-friendly interfaces that are both functional and visually attractive.
+                </div>
+            </div>
+
+            <!-- App Development Service -->
+            <div class="service-card">
+                <img src="https://img.icons8.com/?size=80&id=2wRCMlI8odhH&format=png" alt="App Development Icon" loading="lazy">
+                <p>App Development</p>
+                <div class="description">
+                    I create mobile and web apps that are smooth, efficient, and user-focused.
+                </div>
+            </div>
+
+            <!-- Manual Testing Service -->
+            <div class="service-card">
+                <img src="https://img.icons8.com/color/96/test-tube.png" alt="Manual Testing Icon" loading="lazy">
+                <p>Manual Testing</p>
+                <div class="description">
+                    I test applications manually to find bugs and ensure a high-quality user experience.
+                </div>
+            </div>
+
+            <!-- Database Service -->
+            <div class="service-card">
+                <img src="https://img.icons8.com/color/96/database.png" alt="Database Icon" loading="lazy">
+                <p>Database</p>
+                <div class="description">
+                    I manage structured data using optimized queries and secure database design.
+                </div>
+            </div>
         </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-         
-          
-          <div class="menu-text">
-            <p class="menu-name">Kaju Curry (Red Gravy)</p>
-          </div>
-          <p class="menu-price">₹234</p>
-        </div>
-
-        <div class="menu-item" data-category="panjabi veg">
-
-          <div class="menu-text">
-            <p class="menu-name">Veg Bhuna</p>
-          </div>
-          <p class="menu-price">₹247</p>
-        </div>
-
-<!----------------non-veg ----------------------->
-        <!--  Egg Dishes   -->
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Egg Handi Curry</p>
-  </div>
-  <p class="menu-price">₹130</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Egg Curry</p>
-  </div>
-  <p class="menu-price">₹117</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Egg Masala</p>
-  </div>
-  <p class="menu-price">₹130</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Egg Bhurji</p>
-  </div>
-  <p class="menu-price">₹91</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Egg Boil</p>
-  </div>
-  <p class="menu-price">₹39</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Egg Fry</p>
-  </div>
-  <p class="menu-price">₹52</p>
-</div>
-
-<!--  Chicken Dishes  -->
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Chicken Handi</p>
-  </div>
-  <p class="menu-price">₹260</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Chicken Curry</p>
-  </div>
-  <p class="menu-price">₹260</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Chicken Masala</p>
-  </div>
-  <p class="menu-price">₹247</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Chicken Bhuna</p>
-  </div>
-  <p class="menu-price">₹286</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Chicken Handi (Full)</p>
-  </div>
-  <p class="menu-price">₹858</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Chicken Handi (Half)</p>
-  </div>
-  <p class="menu-price">₹468</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Butter Chicken</p>
-  </div>
-  <p class="menu-price">₹312</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Handi Chicken</p>
-  </div>
-  <p class="menu-price">₹273</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Chicken Kolhapuri</p>
-  </div>
-  <p class="menu-price">₹286</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Chicken Rassa (Extra)</p>
-  </div>
-  <p class="menu-price">₹65</p>
-</div>
-
-<!-- Mutton Dishes  -->
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Mutton Handi</p>
-  </div>
-  <p class="menu-price">₹364</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Mutton Curry</p>
-  </div>
-  <p class="menu-price">₹377</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Mutton Masala</p>
-  </div>
-  <p class="menu-price">₹390</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Mutton Bhuna</p>
-  </div>
-  <p class="menu-price">₹364</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Mutton Handi (Full)</p>
-  </div>
-  <p class="menu-price">₹1560</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Mutton Handi (Half)</p>
-  </div>
-  <p class="menu-price">₹910</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Mutton Rogan Josh</p>
-  </div>
-  <p class="menu-price">₹390</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Mutton Kolhapuri</p>
-  </div>
-  <p class="menu-price">₹364</p>
-</div>
-
-<div class="menu-item" data-category="non-veg">
-
-  <div class="menu-text">
-    <p class="menu-name">Mutton Hyderabadi</p>
-  </div>
-  <p class="menu-price">₹390</p>
-</div>
-
-
-<!------------------- Wadadi Specials -------------------->
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Zunka</p>
-  </div>
-  <p class="menu-price">₹104</p>
-</div>
-
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Fry Bharit (Mashed)</p>
-  </div>
-  <p class="menu-price">₹169</p>
-</div>
-
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Kanda Bharit (Mashed Onion)</p>
-  </div>
-  <p class="menu-price">₹195</p>
-</div>
-
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Baigan Rassa (Gravy)</p>
-  </div>
-  <p class="menu-price">₹156</p>
-</div>
-
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Baingan Masala</p>
-  </div>
-  <p class="menu-price">₹169</p>
-</div>
-
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Methi Masala</p>
-  </div>
-  <p class="menu-price">₹130</p>
-</div>
-
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Puri Bhaji Rassa (Seasonal)</p>
-  </div>
-  <p class="menu-price">₹195</p>
-</div>
-
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Potato Bhaji Rassa (Seasonal)</p>
-  </div>
-  <p class="menu-price">₹195</p>
-</div>
-
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Handi Paneer</p>
-  </div>
-  <p class="menu-price">₹208</p>
-</div>
-
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Shev Bhaji</p>
-  </div>
-  <p class="menu-price">₹156</p>
-</div>
-
-<!-- 🫓 Roti & Papad -->
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Khichiya Papad</p>
-  </div>
-  <p class="menu-price">₹40</p>
-</div>
-
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Roasted Papad</p>
-  </div>
-  <p class="menu-price">₹20</p>
-</div>
-
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Masala Papad</p>
-  </div>
-  <p class="menu-price">₹35</p>
-</div>
-
-<div class="menu-item" data-category="wharadi">
-
-  <div class="menu-text">
-    <p class="menu-name">Fry Papad</p>
-  </div>
-  <p class="menu-price">₹25</p>
-</div>
-
-
-<!--------------------- Rice ------------------>
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Plain Rice (Full)</p>
-  </div>
-  <p class="menu-price">₹104</p>
-</div>
-
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Plain Rice (Half)</p>
-  </div>
-  <p class="menu-price">₹65</p>
-</div>
-
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Jeera Rice (Full)</p>
-  </div>
-  <p class="menu-price">₹117</p>
-</div>
-
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Jeera Rice (Half)</p>
-  </div>
-  <p class="menu-price">₹65</p>
-</div>
-
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Gola Bhat</p>
-  </div>
-  <p class="menu-price">₹195</p>
-</div>
-
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Veg Pulao</p>
-  </div>
-  <p class="menu-price">₹156</p>
-</div>
-
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Jeera Garlic Rice</p>
-  </div>
-  <p class="menu-price">₹143</p>
-</div>
-
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Butter Dal Khichdi</p>
-  </div>
-  <p class="menu-price">₹195</p>
-</div>
-
-<!-- Biryani under Rice Category -->
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Veg Biryani</p>
-  </div>
-  <p class="menu-price">₹234</p>
-</div>
-
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Egg Biryani</p>
-  </div>
-  <p class="menu-price">₹208</p>
-</div>
-
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Chicken Biryani</p>
-  </div>
-  <p class="menu-price">₹285</p>
-</div>
-
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Mutton Biryani</p>
-  </div>
-  <p class="menu-price">₹286</p>
-</div>
-
-<div class="menu-item" data-category="rice">
-
-  <div class="menu-text">
-    <p class="menu-name">Paneer Biryani</p>
-  </div>
-  <p class="menu-price">₹208</p>
-</div>
-<!-- DAL SECTION -->
-<!-- <h3 class="menu-heading">Dal (Lentils)</h3> -->
-<div class="menu-item" data-category="lentils">
-
-  <div class="menu-text">
-    <p class="menu-name">Dal Fry</p>
-  </div>
-  <p class="menu-price">₹104</p>
-</div>
-
-<div class="menu-item" data-category="lentils">
-
-  <div class="menu-text">
-    <p class="menu-name">Jeera Dal</p>
-  </div>
-  <p class="menu-price">₹104</p>
-</div>
-
-<div class="menu-item" data-category="lentils">
-
-  <div class="menu-text">
-    <p class="menu-name">Sadhi Dal</p>
-  </div>
-  <p class="menu-price">₹91</p>
-</div>
-
-<div class="menu-item" data-category="lentils">
-
-  <div class="menu-text">
-    <p class="menu-name">Dal Tadka</p>
-  </div>
-  <p class="menu-price">₹117</p>
-</div>
-      </div>
     </section>
-
-<!---------gallery section -------->
-  <section class="gallery-section" id="gallery">
-    <h2 class="gallery-title"><span>Our Gallery</span></h2>
-    <p class="gallery-subtitle">Begin a delicious journey through the world of flavors - with our special dishes!</p>
-    <!-- ---------- -->
-    <div class="gallery-flex">
-      <!-- Row 1 - 2 images -->
-      <div class="row ">
-        <!-- <img class="first-img" src="https://www.thespruceeats.com/thmb/XDBL9gA6A6nYWUdsRZ3QwH084rk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-chicken-biryani-recipe-7367850-hero-A-ed211926bb0e4ca1be510695c15ce111.jpg" alt=""> -->
-        <img class="first-img" src="https://b.zmtcdn.com/data/pictures/chains/9/21580019/1733302667ba2d2884-995a-4cb7-89a7-34ba65707ab9.jpg?fit=around|960:500&crop=960:500;*,*" alt="Biryani">
-         <img class="second-img" src="https://cdn.dotpe.in/longtail/store-items/4034634/U6hmxLnn.jpeg" alt="South Indian">
-      </div>
-
-      <!-- Row 2 - 3 images -->
-      <div class="row">
  
-        <img class="third-img" src="https://media.distractify.com/brand-img/qpcNBM6QQ/0x0/chinese-food-1748971409233.jpg" alt="Spring Roll">
-        <img class="forth-img" src="https://files.yappe.in/place/small/kipp-s-sudama-sweets-10560364.webp" alt="Noodles">
-        <img class="fifth-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgItiitwx3VRJeY7zoSs2qSQDbkhE_BSOjrzai2OFO8rB_FgM2" alt="Thali">
-      </div>
+    <!--------------- PROJECTS SECTION ------------>
+    <section class="projects-container" id="projects">
+        <h1 class="project-title">My <span>Projects</span></h1>
+        <div class="project-grid">
+            <!-- HTML Projects -->
+            <a href="./src/Project/html/html-folder.html" class="project-card">
+                <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML Projects" class="project-img" loading="lazy">
+                <h3>HTML Projects</h3>
+                <p>Semantic markup, accessibility, responsive design</p>
+            </a>
 
-      <!-- Row 3 - 2 images -->
-      <div class="row">
-        <img class="sixth-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV4X70whbY97FOV0aM_5Uy57Oli9WnwIS4JzS9y5qYnENmzr0g" alt="Paratha">
-        <img class="seventh-img" src="https://b.zmtcdn.com/data/dish_photos/ee7/617cfacfd0a191a5000babfb4695aee7.jpg" alt="Paneer Dish">
-      </div>
-    </div>
-  </section>
-  <!-----------------contact section ----------->
-    <section class="contact-section">
-      <h2>Let's Contact</h2>
-      <div class="line"></div>
+            <!-- CSS Projects -->
+            <a href="./src/Project/css/css-folder.html" class="project-card">
+                <img src="https://img.icons8.com/color/96/css3.png" alt="CSS Projects" class="project-img" loading="lazy">
+                <h3>CSS Projects</h3>
+                <p>Flexbox, Grid, animations, responsive layouts</p>
+            </a>
 
-      <div class="contact-boxes">
-        <!-- Contact Details -->
-        <div class="box">
-          <h3><i class="fas fa-address-card"></i> Contact Details</h3>
-          <p>
+            <!-- JavaScript Projects -->
+            <a href="./src/Project/javaScript/javScript-folder.html" class="project-card">
+                <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="JavaScript Projects" class="project-img" loading="lazy">
+                <h3>JavaScript Projects</h3>
+                <p>ES6+, DOM manipulation, async/await, promises</p>
+            </a>
 
-             <i class="fa-solid fa-phone"></i>
-            <a href="tel:+919876543210">+91 9876543210</a>
-          </p>
-          <p>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:info@pangatrestaurant.com"
-              >info@pangatrestaurant.com</a
-            >
-          </p>
-          <p>
-            <i class="fas fa-map-marker-alt"></i> At Wandli Wagh Post, Katol
-            Bypass, Katol Locality, Katol,<br />Maharashtra 444906
-          </p>
+            <!-- Bootstrap Projects -->
+            <a href="./src/Project/bootstrap/cake-web.html" class="project-card">
+                <img src="https://img.icons8.com/color/96/bootstrap.png" alt="Bootstrap Projects" class="project-img" loading="lazy">
+                <h3>Bootstrap Projects</h3>
+                <p>Responsive frameworks and component libraries</p>
+            </a>
+
+            <!-- React Projects -->
+            <a href="https://guileless-pavlova-7c3260.netlify.app/" class="project-card" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/color/96/react-native.png" alt="React Projects" class="project-img" loading="lazy">
+                <h3>React Projects</h3>
+                <p>Building optimized UIs using React with Vite</p>
+            </a>
+
+            <!-- Test Cases -->
+            <a href="./src/Project/testcase/testcase-folder.html" class="project-card">
+                <img src="https://img.icons8.com/color/96/test-tube.png" alt="Test Cases" class="project-img" loading="lazy">
+                <h3>Test Cases</h3>
+                <p>Quality assurance and testing documentation</p>
+            </a>
+
+            <!-- Assignments -->
+            <a href="./src/Project/logical/assignment.html" class="project-card">
+                <img src="https://img.icons8.com/color/96/code.png" alt="Assignments" class="project-img" loading="lazy">
+                <h3>Assignment</h3>
+                <p>Coding challenges and problem-solving exercises</p>
+            </a>
+
+            <!-- Live Projects -->
+            <a href="./src/Project/live-project/project.html" class="project-card">
+                <img src="https://img.icons8.com/color/96/project.png" alt="Live Projects" class="project-img" loading="lazy">
+                <h3>Live Projects</h3>
+                <p>Real-world applications and deployed solutions</p>
+            </a>
         </div>
-
-        <!-- Opening Hours -->
-        <div class="box">
-          <h3><i class="far fa-clock"></i> Opening Hours</h3>
-          <p><b>Monday - Saturday:</b></p>
-          <p>10AM - 10PM</p>
-          <p><b>Sunday:</b></p>
-          <p>10AM - 9PM</p>
-        </div>
-      </div>
-
-      <!-- Map Section -->
-      <div class="map-section">
-        <h3>📍 Find Your Way to Flavor!</h3>
-         <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14875.520182921745!2d78.60489517!3d21.25762302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1755404140000!5m2!1sen!2sin"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
-      
-      </div>
     </section>
 
-    <!------- footer section  ---------->
-      <footer id="contact">
-    <div class="footer-container">
-      <!-- Column 1 -->
-      <div class="footer-column">
-        <h3>Company</h3>
-        <ul>
-          <li><i class="fas fa-angle-right"></i><a href="#about">About Us</a></li>
-          <li><i class="fas fa-angle-right"></i><a href="#contact">Contact Us</a></li>
-          <li><i class="fas fa-angle-right"></i><a href="#food-menu">menu</a></li>
-          <li><i class="fas fa-angle-right"></i><a href="#gallery">Gallery</a></li>
-          <li><i class="fas fa-angle-right"></i><a href="#special">Special Dish</a></li>
-        </ul>
-      </div>
+  
+    <!---------- CONTACT SECTION --------->
+   
+ 
+    <section class="contact-container" id="contact">
+        <div class="contact-content">
+            <!-- Left side - Contact information -->
+            <div class="contact-info">
+                <h1 class="contact-title">Let's <span>Connect</span></h1> 
 
-      <!-- Column 2 -->
-      <div class="footer-column">
-        <h3>Contact</h3>
-        <ul>
-          <li><i class="fas fa-map-marker-alt"></i> At Wandli Wagh Post, Katol
-            Bypass, Katol Locality, Katol,<br />Maharashtra 444906</li>
-          <li><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 9876543210</a></li>   
-          <li><i class="fas fa-envelope"></i><a href="mailto:info@pangatrestaurant.com">info@pangatrestaurant.com</a></li>
-        </ul>
+                <div class="contact-details">
+                    <!-- Email Contact -->
+                    <a href="mailto:bondredivya12@gmail.com" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">bondredivya12@gmail.com</div>
+                        </div>
+                    </a>
 
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- Phone Contact -->
+                    <a href="tel:+919699967561" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <div class="contact-label">Phone</div>
+                            <div class="contact-value">+91 96********</div>
+                        </div>
+                    </a>
+
+                    <!-- Location -->
+                    <a href="https://www.google.com/maps/place/Nagpur,+Maharashtra,+India" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <div class="contact-label">Location</div>
+                            <div class="contact-value">Nagpur, Maharashtra, India</div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Right side - Contact form -->
+            <div class="contact-form-container">
+                <h3 class="form-title">Send Me a Message</h3>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="name" placeholder="Your Name *" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" class="form-input" name="email" placeholder="Your Email *" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="subject" placeholder="Subject *" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea class="form-textarea" name="message" placeholder="Your Message *" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
         </div>
-      </div>
 
-      <!-- Column 3 -->
-      <div class="footer-column">
-        <h3>Opening</h3>
-        <p><strong>Monday - Saturday</strong><br>09AM - 09PM</p>
-        <p><strong>Sunday</strong><br>10AM - 08PM</p>
-      </div>
-    </div>
-  </footer>
+        <!-- Social Media Section -->
+        <div class="social-section">
+            <h3 class="social-title">Follow Me On Social Media</h3>
+            <div class="social-links">
+                <!-- GitHub -->
+                <a href="https://github.com/DivyaFullStackDeveloper/Div_Portfolio" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit GitHub profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/divya-bondre-23a330321/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit LinkedIn profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                
+                
 
- </div>
-    <!-- Scroll up button -->
-    <a href="#home" class="scroll-up">↑</a>
+                 <!-- Email -->
+                <a href="mailto:bondredivya12@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit LinkedIn profile">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+              
+                 <!-- loation -->
+                <a href="https://www.google.com/maps/place/Nagpur,+Maharashtra,+India" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit LinkedIn profile">
+                    <!-- <i class="fa-solid fa-envelope"></i> -->
+                     <i class="fa-solid fa-location-dot"></i>
+                </a>
+               
+            </div>
+        </div>
+
+        <!-- Footer note -->
+        <div class="footer-note">
+            <p>© 2024 <span class="highlight">Divya Bondre</span>. All rights reserved.</p>
+            
+        </div>
+    </section>
 
 
+   
+    <!------- JAVASCRIPT function -------->
+    <script>
+        /* Toggle mobile navigation menu */
+        function toggleMenu() {
+            const menuBtn = document.querySelector('.menu-btn');
+            const navbar = document.getElementById('navbar');
 
-
-
-
-       <script>
-      // scroll logic
-      window.addEventListener("scroll", function () {
-        const nav = document.querySelector(".top-nav");
-        if (window.scrollY > 50) {
-          nav.classList.add("scrolled");
-        } else {
-          nav.classList.remove("scrolled");
+            menuBtn.classList.toggle('active'); 
+            navbar.classList.toggle('active');  
         }
-      });
-      // Toggle mobile buttons
-      document
-        .getElementById("menuToggle")
-        .addEventListener("click", function () {
-          const mobileButtons = document.getElementById("mobileTopButtons");
-          mobileButtons.style.display =
-            mobileButtons.style.display === "flex" ? "none" : "flex";
+
+        /* Close menu when navigation link is clicked */
+        const navLinks = document.querySelectorAll('.navbar a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.menu-btn').classList.remove('active');
+                document.getElementById('navbar').classList.remove('active');
+            });
         });
 
-      // Toggle bottom nav when menu button is clicked (mobile)
-      document
-        .getElementById("mobileMenuBtn")
-        .addEventListener("click", function () {
-          document.getElementById("bottomNav").classList.toggle("show");
-        });
-
-      // Also works for desktop Menu button
-      document.getElementById("menuBtn").addEventListener("click", function () {
-        document.getElementById("bottomNav").classList.toggle("show");
-      });
-
-
-
-      // menu cection
-     const tabs = document.querySelectorAll(".menu-tabs a");
-      const items = document.querySelectorAll(".menu-item");
-
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          const filter = tab.dataset.filter;
-          items.forEach((item) => {
-            if (filter === "all" || item.dataset.category.includes(filter)) {
-              item.classList.remove("hidden");
-            } else {
-              item.classList.add("hidden");
-            }
-          });
-        });
-      });
-
-// show b=bottom nav on other 
- 
-  const currentPage = "home";
-
-  const menuBtn = document.getElementById("menuBtn"); // Desktop Menu button
-  const mobileMenuBtn = document.getElementById("mobileMenuBtn"); // Mobile Menu button
-  const bottomNav = document.getElementById("bottomNav");
-
-  // Function to control bottom nav visibility based on screen + page
-  function updateBottomNav() {
-    const isDesktop = window.innerWidth >= 820; // Desktop breakpoint
-
-    if (isDesktop) {
-      if (currentPage === "home") {
-        bottomNav.style.display = "flex"; // always visible on Home
-      } else {
-        bottomNav.style.display = "none"; // hidden on other pages
-      }
-    } else {
-      bottomNav.style.display = "none"; // Mobile: always hidden initially
-    }
-  }
-
-  // Toggle bottom nav on desktop Menu button click
-  menuBtn.addEventListener("click", () => {
-    bottomNav.style.display =
-      bottomNav.style.display === "flex" ? "none" : "flex";
-  });
-
-  // Toggle bottom nav on mobile Menu button click
-  mobileMenuBtn.addEventListener("click", () => {
-    bottomNav.style.display =
-      bottomNav.style.display === "flex" ? "none" : "flex";
-  });
-
-  // Run on page load
-  updateBottomNav();
-
-  // Update on window resize
-  window.addEventListener("resize", updateBottomNav);
     </script>
-  </body>
+
+</body>
 </html>
